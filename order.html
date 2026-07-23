@@ -116,7 +116,11 @@
             <div class="form-ok" id="formOk">
               <div class="ok-ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
               <h3 data-i="fok_h">Дякуємо! Заявку отримано</h3>
-              <p data-i="fok_p">Ми звʼяжемося з тобою найближчим часом за вказаними контактами.</p>
+              <p data-i="fok_p" id="fokP">Ми звʼяжемося з тобою найближчим часом за вказаними контактами.</p>
+              <div id="fokFallback" style="display:none">
+                <p data-i="fok_fb">Натисни кнопку — відкриється наш Telegram. Заявку вже скопійовано: встав її у чат і надішли.</p>
+                <a class="btn btn-primary btn-lg" href="https://t.me/ai_fabryka_bot" target="_blank" rel="noopener"><span data-i="fok_fb_btn">Відкрити Telegram</span></a>
+              </div>
             </div>
           </div>
         </div>
@@ -225,6 +229,7 @@ window.I18N={
   chip_site:"Website",chip_bot:"Telegram bot",chip_auto:"Automation",chip_ai:"AI integration",chip_crm:"CRM / analytics",chip_ads:"Ads",chip_content:"Content",chip_other:"Other",
   fc_submit:"Send request",fc_note:"A request commits you to nothing. Product demo — $1 before full payment.",fc_err:"Please enter your name and phone number.",
   fok_h:"Thank you! Request received",fok_p:"We'll get in touch shortly via the contacts you left.",
+  fok_fb:"Tap the button — our Telegram will open. Your request is already copied: paste it into the chat and send.",fok_fb_btn:"Open Telegram",
   faq_eyebrow:"Questions",faq_h2:"Frequently asked questions",
   q1_q:"How much does it cost?",q1_a:"It depends on the task. A simple page or bot we launch cheaply; complex systems are quoted separately. We name the price right after a short spec — before any payment.",
   q2_q:"What is the $1 demo?",q2_a:"For a symbolic $1 you see the finished look and behaviour of your product before full payment. You like it — you pay the rest and take it. You don't — you lose nothing.",
@@ -284,8 +289,11 @@ window.I18N={
   function done(fallback){
     form.style.display='none';
     if(fallback){
-      var p=ok.querySelector('[data-i=fok_p]');
-      // текст лишаємо як є — заявку отримано; фолбек просто підстраховка на клієнті
+      // бекенд недоступний (напр. статичний хостинг) — не втрачаємо лід, ведемо в Telegram
+      var en=(document.documentElement.lang==='en');
+      var h=ok.querySelector('[data-i=fok_h]'); if(h) h.textContent=en?'Request ready':'Заявку сформовано';
+      var p=document.getElementById('fokP'); if(p) p.style.display='none';
+      var fb=document.getElementById('fokFallback'); if(fb) fb.style.display='block';
     }
     ok.classList.add('show');
     ok.scrollIntoView({behavior:'smooth',block:'center'});
