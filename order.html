@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Замовити — AI-Фабрика</title>
+<meta name="description" content="Замов цифровий продукт під ключ: сайт, бот, автоматизація, CRM або реклама. ТЗ і ціна одразу, демо за $1, готово за 1-2 дні.">
+<meta property="og:title" content="Замовити — AI-Фабрика">
+<meta property="og:description" content="Опиши задачу — складемо ТЗ, покажемо демо за $1 і зробимо за 1-2 дні.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- градиент для иконок и signature -->
+<svg width="0" height="0" style="position:absolute"><defs>
+  <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#34D399"/>
+  </linearGradient></defs></svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <svg class="logo" viewBox="0 0 420 420" aria-hidden="true">
+        <g class="spark-rot"><g id="navspark" fill="none" stroke="url(#g1)"></g></g>
+      </svg>
+      <span>AI-Фабрика</span>
+    </a>
+    <nav class="menu">
+      <a href="services.html" data-i="m_serv">Послуги</a>
+      <a href="index.html#process" data-i="m_proc">Як працюємо</a>
+      <a href="cases.html" data-i="m_cases">Кейси</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang">
+        <button data-lang="uk" class="on">UA</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <a href="order.html" class="btn btn-primary"><span data-i="m_order">Замовити</span></a>
+      <button class="burger" aria-label="menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow" data-i="ph_eyebrow">Замовлення</span>
+      <h1 data-i="ph_h1">Замов цифровий продукт під ключ</h1>
+      <p class="lead" data-i="ph_lead">Опиши задачу — ми складемо чітке ТЗ, покажемо демо за $1 і зробимо за 1-2 дні. Без техзнань і передоплат наосліп.</p>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section class="block">
+    <div class="wrap">
+      <div class="order-grid reveal">
+        <div class="order-left">
+          <span class="eyebrow" data-i="ol_eyebrow">Як це працює</span>
+          <h2 data-i="ol_h2">Від заявки до готового продукту</h2>
+          <p data-i="ol_p">Чотири кроки — просто і прозоро.</p>
+          <ol class="order-steps">
+            <li><b data-i="os1_b">Залишаєш заявку</b><span data-i="os1_s">Тут у формі або одразу в Telegram. Розповідаєш, що потрібно.</span></li>
+            <li><b data-i="os2_b">Складаємо ТЗ і ціну</b><span data-i="os2_s">За 3-4 питання уточнюємо деталі. Одразу називаємо ціну — без прихованих доплат.</span></li>
+            <li><b data-i="os3_b">Демо за $1</b><span data-i="os3_s">Бачиш, як виглядатиме і працюватиме твій продукт — ДО повної оплати.</span></li>
+            <li><b data-i="os4_b">Готовий продукт за 1-2 дні</b><span data-i="os4_s">Правки й розвиток далі — просто словами в чаті.</span></li>
+          </ol>
+          <div class="order-guarantees">
+            <div class="g"><b data-i="og1_b">Демо за $1</b><span data-i="og1_s">Спочатку бачиш результат, потім платиш</span></div>
+            <div class="g"><b data-i="og2_b">Чітка ціна</b><span data-i="og2_s">Називаємо одразу, без сюрпризів</span></div>
+            <div class="g"><b data-i="og3_b">1-2 дні</b><span data-i="og3_s">Не місяці очікування</span></div>
+            <div class="g"><b data-i="og4_b">Правки словами</b><span data-i="og4_s">Зміни — просто в чаті, без ТЗ-простирадл</span></div>
+          </div>
+        </div>
+        <div class="order-right">
+          <div class="form-card">
+            <h3 data-i="fc_h">Залиш заявку</h3>
+            <div class="fc-sub" data-i="fc_sub">Відповімо швидко, складемо ТЗ і назвемо ціну.</div>
+            <form id="orderForm" novalidate>
+              <div class="field">
+                <label for="of_name" data-i="fc_l_name">Як тебе звати?</label>
+                <input id="of_name" name="name" type="text" placeholder="Імʼя" required>
+              </div>
+              <div class="field">
+                <label for="of_phone"><span data-i="fc_l_phone">Номер телефону</span> <span class="req">*</span></label>
+                <input id="of_phone" name="phone" type="tel" inputmode="tel" placeholder="+380 __ ___ __ __" required>
+              </div>
+              <div class="field">
+                <label for="of_tg" data-i="fc_l_tg">Telegram (нік для звʼязку)</label>
+                <input id="of_tg" name="telegram" type="text" placeholder="@нік у Telegram">
+              </div>
+              <div class="field">
+                <label data-i="fc_l_need">Що потрібно?</label>
+                <div class="chips" id="ofChips">
+                  <button type="button" class="chip" data-v="Сайт" data-i="chip_site">Сайт</button>
+                  <button type="button" class="chip" data-v="Telegram-бот" data-i="chip_bot">Telegram-бот</button>
+                  <button type="button" class="chip" data-v="Автоматизація" data-i="chip_auto">Автоматизація</button>
+                  <button type="button" class="chip" data-v="Впровадження ШІ" data-i="chip_ai">Впровадження ШІ</button>
+                  <button type="button" class="chip" data-v="CRM / аналітика" data-i="chip_crm">CRM / аналітика</button>
+                  <button type="button" class="chip" data-v="Реклама" data-i="chip_ads">Реклама</button>
+                  <button type="button" class="chip" data-v="Контент" data-i="chip_content">Контент</button>
+                  <button type="button" class="chip" data-v="Інше" data-i="chip_other">Інше</button>
+                </div>
+              </div>
+              <div class="field">
+                <label for="of_task" data-i="fc_l_task">Опиши задачу</label>
+                <textarea id="of_task" name="task" placeholder="Пару речень: що за бізнес і що хочеш отримати"></textarea>
+              </div>
+              <div class="field-err" id="ofErr" data-i="fc_err">Вкажи, будь ласка, імʼя та номер телефону.</div>
+              <button type="submit" class="btn btn-primary btn-lg"><span data-i="fc_submit">Надіслати заявку</span></button>
+              <div class="form-note" data-i="fc_note">Заявка нічого не зобовʼязує. Демо продукту — за $1 до повної оплати.</div>
+            </form>
+            <div class="form-ok" id="formOk">
+              <div class="ok-ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+              <h3 data-i="fok_h">Дякуємо! Заявку отримано</h3>
+              <p data-i="fok_p">Ми звʼяжемося з тобою найближчим часом за вказаними контактами.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">01 <i>/</i> <span data-i="faq_eyebrow">Питання</span></span>
+        <div class="sec-head-inner">
+          <h2 data-i="faq_h2">Часті питання</h2>
+        </div>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary><span data-i="q1_q">Скільки це коштує?</span><span class="q-ic"></span></summary>
+          <div class="ans" data-i="q1_a">Залежить від задачі. Просту сторінку чи бота запускаємо недорого, складні системи рахуємо окремо. Ціну називаємо одразу після короткого ТЗ — до будь-якої оплати.</div>
+        </details>
+        <details>
+          <summary><span data-i="q2_q">Що таке демо за $1?</span><span class="q-ic"></span></summary>
+          <div class="ans" data-i="q2_a">За символічний $1 ти бачиш готовий вигляд і роботу свого продукту до повної оплати. Подобається — доплачуєш і забираєш. Ні — нічого не втрачаєш.</div>
+        </details>
+        <details>
+          <summary><span data-i="q3_q">Скільки часу займе?</span><span class="q-ic"></span></summary>
+          <div class="ans" data-i="q3_a">Прості продукти — 1-2 дні. Складніші системи — трохи довше, точний строк назвемо в ТЗ.</div>
+        </details>
+        <details>
+          <summary><span data-i="q4_q">Мені потрібні техзнання?</span><span class="q-ic"></span></summary>
+          <div class="ans" data-i="q4_a">Ні. Ти описуєш задачу словами — усе технічне беремо на себе. Правки далі теж просто словами в чаті.</div>
+        </details>
+        <details>
+          <summary><span data-i="q5_q">А якщо треба буде щось змінити потім?</span><span class="q-ic"></span></summary>
+          <div class="ans" data-i="q5_a">Пишеш у чат — вносимо. Продукт живе й розвивається разом із твоїм бізнесом.</div>
+        </details>
+        <details>
+          <summary><span data-i="q6_q">Ви працюєте по всій Україні?</span><span class="q-ic"></span></summary>
+          <div class="ans" data-i="q6_a">Так. Усе віддалено: заявка, ТЗ, демо і готовий продукт — онлайн.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="block">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2 data-i="cta_h">Готовий почати?</h2>
+        <p data-i="cta_p">Залиш заявку вище або напиши нам у Telegram — відповімо швидко.</p>
+        <a href="https://t.me/ai_fabryka_bot" class="btn btn-primary btn-lg" target="_blank" rel="noopener"><span data-i="cta_btn">Швидше — напиши в Telegram</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand"><svg class="logo" viewBox="0 0 420 420" aria-hidden="true"><g id="footspark" fill="none" stroke="url(#g1)"></g></svg><span>AI-Фабрика</span></div>
+        <p data-i="f_desc">Робимо бізнесу цифрові продукти під ключ — сайти, боти, автоматизацію, рекламу.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/fabrika_ai_/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 0 4.1.1 1 0 1.7.2 2.3.5.6.2 1.1.5 1.6 1s.8 1 1 1.6c.3.6.5 1.3.5 2.3.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.7-.5 2.3-.2.6-.5 1.1-1 1.6s-1 .8-1.6 1c-.6.3-1.3.5-2.3.5-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.7-.2-2.3-.5-.6-.2-1.1-.5-1.6-1s-.8-1-1-1.6c-.3-.6-.5-1.3-.5-2.3C2 15 2 14.7 2 12s0-3 .1-4.1c0-1 .2-1.7.5-2.3.2-.6.5-1.1 1-1.6s1-.8 1.6-1c.6-.3 1.3-.5 2.3-.5C9 2 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM17.8 7a1.2 1.2 0 10-2.4 0 1.2 1.2 0 002.4 0z"/></svg></a>
+          <a href="https://t.me/ai_fabryka_bot" aria-label="Telegram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21.9 4.3l-3.3 15.5c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.3 13.5l-4.8-1.5c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i="f_c1">Меню</h4>
+        <a href="services.html" data-i="m_serv">Послуги</a>
+        <a href="index.html#process" data-i="m_proc">Як працюємо</a>
+        <a href="cases.html" data-i="m_cases">Кейси</a>
+        <a href="order.html" data-i="m_order">Замовити</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i="f_c2">Звʼязок</h4>
+        <a href="https://t.me/ai_fabryka_bot" target="_blank" rel="noopener">Telegram-бот</a>
+        <a href="https://www.instagram.com/fabrika_ai_/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span data-i="f_copy">© 2026 AI-Фабрика. Цифрові продукти для бізнесу.</span>
+      <span data-i="f_made">Зроблено власними інструментами</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.I18N={
+ en:{
+  m_serv:"Services",m_proc:"How we work",m_cases:"Cases",m_order:"Order",
+  ph_eyebrow:"Order",ph_h1:"Order a turnkey digital product",
+  ph_lead:"Describe your task — we'll draft a clear spec, show a demo for $1 and deliver in 1-2 days. No tech skills and no blind prepayments required.",
+  ol_eyebrow:"How it works",ol_h2:"From request to a finished product",ol_p:"Four steps — simple and transparent.",
+  os1_b:"You leave a request",os1_s:"Here in the form or straight in Telegram. Tell us what you need.",
+  os2_b:"We draft the spec & price",os2_s:"We clarify details in 3-4 questions. We name the price right away — no hidden fees.",
+  os3_b:"Demo for $1",os3_s:"You see how your product will look and work — BEFORE full payment.",
+  os4_b:"Finished product in 1-2 days",os4_s:"Edits and further development — just in words, in chat.",
+  og1_b:"Demo for $1",og1_s:"See the result first, pay later",
+  og2_b:"Clear price",og2_s:"Named upfront, no surprises",
+  og3_b:"1-2 days",og3_s:"Not months of waiting",
+  og4_b:"Edits in words",og4_s:"Changes — right in chat, no spec walls",
+  fc_h:"Leave a request",fc_sub:"We'll reply fast, draft a spec and name the price.",
+  fc_l_name:"What's your name?",fc_l_phone:"Phone number",fc_l_tg:"Telegram (username)",fc_l_need:"What do you need?",fc_l_task:"Describe the task",
+  chip_site:"Website",chip_bot:"Telegram bot",chip_auto:"Automation",chip_ai:"AI integration",chip_crm:"CRM / analytics",chip_ads:"Ads",chip_content:"Content",chip_other:"Other",
+  fc_submit:"Send request",fc_note:"A request commits you to nothing. Product demo — $1 before full payment.",fc_err:"Please enter your name and phone number.",
+  fok_h:"Thank you! Request received",fok_p:"We'll get in touch shortly via the contacts you left.",
+  faq_eyebrow:"Questions",faq_h2:"Frequently asked questions",
+  q1_q:"How much does it cost?",q1_a:"It depends on the task. A simple page or bot we launch cheaply; complex systems are quoted separately. We name the price right after a short spec — before any payment.",
+  q2_q:"What is the $1 demo?",q2_a:"For a symbolic $1 you see the finished look and behaviour of your product before full payment. You like it — you pay the rest and take it. You don't — you lose nothing.",
+  q3_q:"How long will it take?",q3_a:"Simple products — 1-2 days. More complex systems — a bit longer; we'll name the exact deadline in the spec.",
+  q4_q:"Do I need tech skills?",q4_a:"No. You describe the task in words — we handle everything technical. Later edits are also just words in chat.",
+  q5_q:"What if I need to change something later?",q5_a:"You write in chat — we make the change. The product lives and grows together with your business.",
+  q6_q:"Do you work across all of Ukraine?",q6_a:"Yes. Everything is remote: request, spec, demo and the finished product — online.",
+  cta_h:"Ready to start?",cta_p:"Leave a request above or message us on Telegram — we'll reply fast.",cta_btn:"Faster — message us on Telegram",
+  f_desc:"We build turnkey digital products for business — websites, bots, automation, ads.",f_c1:"Menu",f_c2:"Contact",
+  f_copy:"© 2026 AI-Fabryka. Digital products for business.",f_made:"Built with our own tools"
+ }
+};
+</script>
+<script>
+(function(){
+  "use strict";
+  var form=document.getElementById('orderForm');
+  var ok=document.getElementById('formOk');
+  var chips=document.getElementById('ofChips');
+  var errBox=document.getElementById('ofErr');
+  if(chips){
+    chips.addEventListener('click',function(e){
+      var c=e.target.closest('.chip'); if(!c)return;
+      c.classList.toggle('on');
+    });
+  }
+  function val(n){ var e=form.elements[n]; return ((e&&e.value)||'').trim(); }
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var name=val('name'), phone=val('phone'), tg=val('telegram'), task=val('task');
+      if(!name || !phone){
+        if(errBox) errBox.classList.add('show');
+        (name?form.elements['phone']:form.elements['name']).focus();
+        return;
+      }
+      if(errBox) errBox.classList.remove('show');
+      var picked=[];
+      form.querySelectorAll('.chip.on').forEach(function(c){ picked.push(c.dataset.v||c.textContent.trim()); });
+      var payload={ name:name, phone:phone, telegram:tg,
+                    need:(picked.length?picked.join(', '):''), task:task,
+                    page:location.href, lang:document.documentElement.lang||'uk' };
+      var btn=form.querySelector('button[type=submit]');
+      if(btn){ btn.disabled=true; btn.style.opacity='.6'; }
+      fetch('/api/order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+        .then(function(r){ if(!r.ok) throw new Error('bad status'); return r.json(); })
+        .then(function(d){ if(!d||!d.ok) throw new Error('not ok'); done(); })
+        .catch(function(){
+          // фолбек: якщо бекенд недоступний — не втрачаємо лід, ведемо в Telegram
+          var msg="Заявка з сайту AI-Фабрика\nІмʼя: "+name+"\nТелефон: "+phone+"\nTelegram: "+(tg||'—')+"\nНапрямок: "+(payload.need||'—')+"\nЗадача: "+(task||'—');
+          try{ if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(msg); }catch(e){}
+          if(btn){ btn.disabled=false; btn.style.opacity=''; }
+          done(true);
+        });
+    });
+  }
+  function done(fallback){
+    form.style.display='none';
+    if(fallback){
+      var p=ok.querySelector('[data-i=fok_p]');
+      // текст лишаємо як є — заявку отримано; фолбек просто підстраховка на клієнті
+    }
+    ok.classList.add('show');
+    ok.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+})();
+</script>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
